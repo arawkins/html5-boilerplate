@@ -1,0 +1,119 @@
+
+/* =General 
+----------------------------------------------- */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.inner {
+    max-width:1024px;
+    width:100%;
+    margin:0 auto;
+}
+
+header, footer, .databoxes, #slideshow, #content {
+    width:100%;
+}
+/* =Header 
+----------------------------------------------- */
+
+header {
+    width:100%;
+    z-index:10000;
+}
+/* =Nav 
+----------------------------------------------- */
+
+#desktop_menu, #mobile_menu {
+    display:none;
+}
+
+#menu_btn {
+    display:block;
+    padding:0.2em;
+}
+
+
+#desktop_menu {
+    z-index:100;
+}
+.horizontal_menu ul {
+    margin:0;
+    padding:0;
+}
+
+.horizontal_menu {
+    list-style:none;
+    position:relative;
+}
+
+.horizontal_menu li {
+    list-style:none;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+.horizontal_menu li a {
+    display:block;
+}
+
+.horizontal_menu li ul {
+    position:absolute;
+    display:block;
+    background:#FFF;
+}
+.horizontal_menu li li {
+    float:none;
+}
+
+.mega_menu {
+    position:absolute;
+    left:0;
+    background:#FFF;
+    width:100%;
+}
+/* =Slideshow 
+----------------------------------------------- */
+#slideshow {
+    position:relative;
+    z-index:1;
+}
+.slide {
+    position:relative;
+}
+.slide img {
+    width:100%;
+    height:auto;
+}
+
+.slide .caption {
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index:10;
+    background:url(../images/site/transparent-white.png);
+    width:100%;
+}
+/* =Databoxes 
+----------------------------------------------- */
+
+.databox {
+    background:#eee;
+}
+/* =Primary 
+----------------------------------------------- */
+
+/* =Sidebar 
+----------------------------------------------- */
+
+/* =Footer 
+----------------------------------------------- */
+
+footer {
+    background:#eee;
+}

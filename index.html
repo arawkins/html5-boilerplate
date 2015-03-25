@@ -15,15 +15,144 @@
         <link rel="stylesheet" href="css/common.css">
     	<link rel="stylesheet" href="css/tablet.css" media="screen and (min-width:640px)">
     	<link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:768px)">
+        <link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+
+        <!--[if lt IE 9]>
+        <link href="css/tablet.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="css/desktop.css" rel="stylesheet" type="text/css" media="screen" />
+        <![endif]-->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <header>
+            <div class="inner">
+            <h1>Site Title</h1>
+            <form id="search">
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+                <input type="text" value="Search..." onfocus="clearDefault(this)" onblur="restoreDefault(this)">
+                <input type="submit" value="Go">
+
+            </form>
+            <a href="#" id="menu_btn">MENU</a>
+            <nav id="mobile_menu">
+                <ul>
+                    <li><a href="#">Nav Item 1</a></li>
+                    <li><a href="#">Nav Item 2</a></li>
+                    <li><a href="#">Nav Item 3</a>
+                        <ul>
+                            <li><a href="#">Nav Item 1</a></li>
+                            <li><a href="#">Nav Item 2</a></li>
+                            <li><a href="#">Nav Item 1</a></li>
+                            <li><a href="#">Nav Item 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav id="desktop_menu" class="horizontal_menu">
+                <ul>
+                    <li><a href="#">Nav Item 1</a></li>
+                    <li><a href="#">Nav Item 2</a>
+                        <div class="mega_menu sf-mega clearfix"> 
+                            <h2>Mega Title</h2>
+                            <p>Mega text</p>
+                            <ul>
+                                <li><a href="#">Nav Item 1</a></li>
+                                <li><a href="#">Nav Item 2</a></li>
+                                <li><a href="#">Nav Item 1</a></li>
+                                <li><a href="#">Nav Item 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Nav Item 3</a>
+                        <ul>
+                            <li><a href="#">Nav Item 1</a></li>
+                            <li><a href="#">Nav Item 2</a></li>
+                            <li><a href="#">Nav Item 1</a></li>
+                            <li><a href="#">Nav Item 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            </div>
+        </header>
+
+        <div id="slideshow">
+            <div class="slide">
+                <img src="images/site/los-angeles-skyline.jpg">
+                <div class="caption">
+                    <div class="inner">
+                        <h2>Caption Title</h2>
+                        <p>Caption</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/site/yosemite-stream.jpg">
+                <div class="caption">
+                    <div class="inner">
+                        <h2>Caption Title</h2>
+                        <p>Caption</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="databoxes">
+            <div class="inner">
+                <section class="databox row">
+                    <h2>Databox Title</h2>
+                    <p>Databox text</p>
+
+                </section>
+
+                <section class="databox row">
+                    <h2>Databox Title</h2>
+                    <p>Databox text</p>
+                    <p>Databox text</p>
+                    <p>Databox text</p>
+                </section>
+
+                <section class="databox row">
+                    <h2>Databox Title</h2>
+                    <p>Databox text</p>
+
+                </section>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="inner">
+                <section id="primary">
+                    <article>
+                        <h2>Primary Title</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <p>Paragraph</p>
+                        <ul>
+                            <li>list</li>
+                        </ul>
+
+                        <ol>
+                            <li>list</li>
+                        </ol>
+                    </article>
+                </section>
+
+                <aside id="secondary">
+                    <h2>Secondary Title</h2>
+                </aside>
+            </div>
+        </div>
+
+        <footer>
+            <div class="inner">
+                <p><a href="#">Link</a></p>
+            </div>
+        </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
