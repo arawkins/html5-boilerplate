@@ -33,6 +33,33 @@
     float:left;
 }
 
+/* =Forms 
+----------------------------------------------- */
+label {
+    float:left;
+    width:25%;
+    padding:1% 0;
+}
+
+input[type="text"], textarea {
+    width:50%;
+
+    float:left;
+}
+
+form p {
+    clear:left;
+    margin:1em 0;
+    padding:1em 0;
+}
+
+input[type="submit"] {
+    clear:left;
+    display:block;
+    margin-left:25%;
+
+}
+
 /* =Sidebar 
 ----------------------------------------------- */
 #secondary {
