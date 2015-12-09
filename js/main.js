@@ -6,6 +6,11 @@ $(document).ready(function() {
         e.preventDefault();
         $("#mobile_menu").slideToggle();
     });
+    
+    $("#mobile_menu a").click(function(e) {
+        e.preventDefault();
+        $(this).next().slideToggle();
+    });
 
     $(".row").matchHeight();
 
